@@ -5,7 +5,6 @@ const db = new sqlite3.Database('./Database/Volunteers.sqlite');
 
 app.use(express.json());
 
-// Create tables
 db.run(`CREATE TABLE IF NOT EXISTS Events (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     Event_name VARCHAR(255) NOT NULL,
